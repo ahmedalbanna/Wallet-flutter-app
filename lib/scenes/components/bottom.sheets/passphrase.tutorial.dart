@@ -49,9 +49,7 @@ class PassphraseTutorialSheet {
                               color: ProtonColors.textWeak))),
                   const SizedBox(height: 10),
                   Underline(
-                    onTap: () {
-                      ExternalUrl.shared.launchBlogPassphrase();
-                    },
+                    onTap: ExternalUrl.shared.launchBlogPassphrase,
                     child: Text(
                       S.of(context).learn_more,
                       style: ProtonStyles.body2Regular(

@@ -184,9 +184,7 @@ class TextFieldTextV2State extends State<TextFieldTextV2> {
                                 ? widget.showFinishButton ?? true
                                     ? IconButton(
                                         onPressed: () {
-                                          setState(() {
-                                            widget.myFocusNode.unfocus();
-                                          });
+                                          setState(widget.myFocusNode.unfocus);
                                         },
                                         icon: Icon(
                                             Icons.check_circle_outline_rounded,

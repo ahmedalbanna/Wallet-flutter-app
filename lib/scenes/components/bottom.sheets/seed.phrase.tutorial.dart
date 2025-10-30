@@ -48,9 +48,7 @@ class SeedPhraseTutorialSheet {
                               color: ProtonColors.textWeak))),
                   const SizedBox(height: 10),
                   Underline(
-                    onTap: () {
-                      ExternalUrl.shared.launchBlogSeedPhrase();
-                    },
+                    onTap: ExternalUrl.shared.launchBlogSeedPhrase,
                     child: Text(
                       S.of(context).learn_more,
                       style: ProtonStyles.body2Regular(

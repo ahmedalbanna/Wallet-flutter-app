@@ -170,9 +170,7 @@ class TextFieldSendBTCV2State extends State<TextFieldSendBTCV2> {
                     suffixIcon: widget.myFocusNode.hasFocus
                         ? IconButton(
                             onPressed: () {
-                              setState(() {
-                                widget.myFocusNode.unfocus();
-                              });
+                              setState(widget.myFocusNode.unfocus);
                             },
                             icon: Icon(Icons.check_circle_outline_rounded,
                                 size: 20, color: ProtonColors.textWeak))

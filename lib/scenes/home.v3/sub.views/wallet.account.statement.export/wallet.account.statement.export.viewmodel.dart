@@ -8,7 +8,6 @@ import 'package:wallet/managers/features/wallet.list/wallet.list.bloc.model.dart
 import 'package:wallet/managers/providers/data.provider.manager.dart';
 import 'package:wallet/managers/wallet/wallet.manager.dart';
 import 'package:wallet/rust/api/bdk_wallet/account_statement_generator.dart';
-import 'package:wallet/rust/common/keychain_kind.dart';
 import 'package:wallet/scenes/core/coordinator.dart';
 import 'package:wallet/scenes/core/view.navigatior.identifiers.dart';
 import 'package:wallet/scenes/core/viewmodel.dart';

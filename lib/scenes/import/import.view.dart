@@ -55,9 +55,7 @@ class ImportView extends ViewBase<ImportViewModel> {
                     child: SingleChildScrollView(
                         child: Column(children: <Widget>[
                       Underline(
-                        onTap: () {
-                          ExternalUrl.shared.launchBlogImportWallet();
-                        },
+                        onTap: ExternalUrl.shared.launchBlogImportWallet,
                         color: ProtonColors.protonBlue,
                         child: Text(
                           S.of(context).learn_more,
@@ -224,9 +222,7 @@ class ImportView extends ViewBase<ImportViewModel> {
                                   color: ProtonColors.protonBlue,
                                 ),
                                 recognizer: TapGestureRecognizer()
-                                  ..onTap = () {
-                                    ExternalUrl.shared.lanuchTerms();
-                                  },
+                                  ..onTap = ExternalUrl.shared.lanuchTerms,
                               ),
                             ]),
                           ),

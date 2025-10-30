@@ -41,6 +41,7 @@ void showAppCryptoErrorDialog(
                   height: 2,
                 ),
                 GestureDetector(
+                  onTap: ExternalUrl.shared.launchEncryptionKeys,
                   child: Center(
                     child: Text(
                       "https://account.proton.me/mail/encryption-keys",
@@ -50,9 +51,6 @@ void showAppCryptoErrorDialog(
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  onTap: () {
-                    ExternalUrl.shared.launchEncryptionKeys();
-                  },
                 ),
                 const SizedBox(
                   height: 10,

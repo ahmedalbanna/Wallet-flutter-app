@@ -119,9 +119,9 @@ class AccountRow extends StatelessWidget {
                 value: viewModel.isBveEnabled(
                   accountMenuModel.accountModel.accountID,
                 ),
-                activeColor: ProtonColors.protonBlue,
+                activeTrackColor: ProtonColors.protonBlue,
                 thumbColor: ProtonColors.backgroundNorm,
-                trackColor: ProtonColors.textHint,
+                inactiveTrackColor: ProtonColors.textHint,
                 onChanged: (bool newValue) async {
                   if (newValue) {
                     viewModel.showEditBvE(

@@ -135,9 +135,7 @@ class OnboardingGuideView extends ViewBase<OnboardingGuideViewModel> {
                               }
                               return "";
                             },
-                            onFinish: () {
-                              viewModel.checkPassphraseMatched();
-                            },
+                            onFinish: viewModel.checkPassphraseMatched,
                             isPassword: true,
                           ),
                           SizedBoxes.box8,
@@ -154,9 +152,7 @@ class OnboardingGuideView extends ViewBase<OnboardingGuideViewModel> {
                               }
                               return "";
                             },
-                            onFinish: () {
-                              viewModel.checkPassphraseMatched();
-                            },
+                            onFinish: viewModel.checkPassphraseMatched,
                             isPassword: true,
                           ),
                           const SizedBox(height: 12),
@@ -255,9 +251,7 @@ class OnboardingGuideView extends ViewBase<OnboardingGuideViewModel> {
                               color: ProtonColors.protonBlue,
                             ),
                             recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                                ExternalUrl.shared.lanuchTerms();
-                              },
+                              ..onTap = ExternalUrl.shared.lanuchTerms,
                           ),
                         ]),
                       ),

@@ -29,9 +29,7 @@ class DiscoverView extends ViewBase<DiscoverViewModel> {
   /// build fees
   Widget _buildDiscoverFeedsView() {
     return DiscoverFeedsView(
-      onTap: (String link) {
-        ExternalUrl.shared.launchString(link);
-      },
+      onTap: ExternalUrl.shared.launchString,
       protonFeedItems: viewModel.protonFeedItems,
     );
   }

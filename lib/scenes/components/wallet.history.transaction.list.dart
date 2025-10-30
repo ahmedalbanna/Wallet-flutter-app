@@ -111,9 +111,7 @@ class WalletHistoryTransactionListState
             defaultTransactionPerPage * widget.currentPage +
                 defaultTransactionPerPage)
           GestureDetector(
-              onTap: () {
-                widget.showMoreCallback.call();
-              },
+              onTap: widget.showMoreCallback.call,
               child: Container(
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(S.of(context).show_more,

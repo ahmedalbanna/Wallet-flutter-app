@@ -34,9 +34,7 @@ class ProtonProductsView extends ViewBase<ProtonProductsViewModel> {
             child: Column(mainAxisSize: MainAxisSize.min, children: [
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 GestureDetector(
-                  onTap: () {
-                    ExternalUrl.shared.launchProtonMail();
-                  },
+                  onTap: ExternalUrl.shared.launchProtonMail,
                   child: Padding(
                     padding:
                         const EdgeInsets.symmetric(horizontal: defaultPadding),
@@ -72,9 +70,7 @@ class ProtonProductsView extends ViewBase<ProtonProductsViewModel> {
                 const Divider(thickness: 0.2, height: 1),
                 const SizedBox(height: 20),
                 GestureDetector(
-                  onTap: () {
-                    ExternalUrl.shared.launchProtonCalendar();
-                  },
+                  onTap: ExternalUrl.shared.launchProtonCalendar,
                   child: Padding(
                     padding:
                         const EdgeInsets.symmetric(horizontal: defaultPadding),
@@ -110,9 +106,7 @@ class ProtonProductsView extends ViewBase<ProtonProductsViewModel> {
                 const Divider(thickness: 0.2, height: 1),
                 const SizedBox(height: 20),
                 GestureDetector(
-                  onTap: () {
-                    ExternalUrl.shared.launchProtonDrive();
-                  },
+                  onTap: ExternalUrl.shared.launchProtonDrive,
                   child: Padding(
                     padding:
                         const EdgeInsets.symmetric(horizontal: defaultPadding),
@@ -148,9 +142,7 @@ class ProtonProductsView extends ViewBase<ProtonProductsViewModel> {
                 const Divider(thickness: 0.2, height: 1),
                 const SizedBox(height: 20),
                 GestureDetector(
-                  onTap: () {
-                    ExternalUrl.shared.launchProtonPass();
-                  },
+                  onTap: ExternalUrl.shared.launchProtonPass,
                   child: Padding(
                     padding:
                         const EdgeInsets.symmetric(horizontal: defaultPadding),
@@ -189,9 +181,7 @@ class ProtonProductsView extends ViewBase<ProtonProductsViewModel> {
                 const Divider(thickness: 0.2, height: 1),
                 const SizedBox(height: 20),
                 GestureDetector(
-                  onTap: () {
-                    ExternalUrl.shared.launchProtonForBusiness();
-                  },
+                  onTap: ExternalUrl.shared.launchProtonForBusiness,
                   child: Padding(
                     padding:
                         const EdgeInsets.symmetric(horizontal: defaultPadding),

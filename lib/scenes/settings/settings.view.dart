@@ -70,9 +70,7 @@ class SettingsView extends ViewBase<SettingsViewModel> with SettingsViewMixin {
                 ),
                 SettingsItem(
                   title: context.local.account,
-                  onTap: () {
-                    ExternalUrl.shared.launchProtonAccount();
-                  },
+                  onTap: ExternalUrl.shared.launchProtonAccount,
                 ),
               ],
             ),
@@ -153,9 +151,9 @@ class SettingsView extends ViewBase<SettingsViewModel> with SettingsViewMixin {
                       ? const CustomLoading()
                       : CupertinoSwitch(
                           value: viewModel.receiveInviterNotification,
-                          activeColor: ProtonColors.protonBlue,
+                          activeTrackColor: ProtonColors.protonBlue,
                           thumbColor: ProtonColors.backgroundNorm,
-                          trackColor: ProtonColors.textHint,
+                          inactiveTrackColor: ProtonColors.textHint,
                           onChanged: viewModel.updateReceiveInviterNotification,
                         ),
                   onTap: () {},
@@ -166,9 +164,9 @@ class SettingsView extends ViewBase<SettingsViewModel> with SettingsViewMixin {
                       ? const CustomLoading()
                       : CupertinoSwitch(
                           value: viewModel.receiveEmailIntegrationNotification,
-                          activeColor: ProtonColors.protonBlue,
+                          activeTrackColor: ProtonColors.protonBlue,
                           thumbColor: ProtonColors.backgroundNorm,
-                          trackColor: ProtonColors.textHint,
+                          inactiveTrackColor: ProtonColors.textHint,
                           onChanged: viewModel
                               .updateReceiveEmailIntegrationNotification,
                         ),
@@ -259,15 +257,11 @@ class SettingsView extends ViewBase<SettingsViewModel> with SettingsViewMixin {
                       ),
                       SettingsItem(
                         title: context.local.privacy_policy,
-                        onTap: () {
-                          ExternalUrl.shared.lanuchPrivacy();
-                        },
+                        onTap: ExternalUrl.shared.lanuchPrivacy,
                       ),
                       SettingsItem(
                         title: context.local.terms_of_service,
-                        onTap: () {
-                          ExternalUrl.shared.lanuchTerms();
-                        },
+                        onTap: ExternalUrl.shared.lanuchTerms,
                       ),
                       SettingsItem(
                         title: context.local.how_to_import_wallet_,
@@ -281,9 +275,7 @@ class SettingsView extends ViewBase<SettingsViewModel> with SettingsViewMixin {
                       ),
                       SettingsItem(
                         title: context.local.help_center_knowledge_base,
-                        onTap: () {
-                          ExternalUrl.shared.launchProtonHelpCenter();
-                        },
+                        onTap: ExternalUrl.shared.launchProtonHelpCenter,
                       ),
                       SettingsItem(
                         title: context.local.help_center_clear_caches,

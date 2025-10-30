@@ -39,7 +39,7 @@ class CustomSliderV1State extends State<CustomSliderV1> {
   Widget build(BuildContext context) {
     return SliderTheme(
       data: SliderThemeData(
-        showValueIndicator: ShowValueIndicator.always,
+        showValueIndicator: ShowValueIndicator.onDrag,
         thumbShape: CustomSliderV1ThumbShape(),
         overlayShape: const RoundSliderOverlayShape(overlayRadius: 18),
         trackHeight: 8.0,

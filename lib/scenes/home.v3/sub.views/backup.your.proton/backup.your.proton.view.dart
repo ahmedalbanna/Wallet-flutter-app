@@ -63,17 +63,13 @@ class BackupYourProtonView extends ViewBase<BackupYourProtonViewModel> {
       const SizedBox(height: 8),
       Underline(
         color: ProtonColors.protonBlue,
+        onTap: ExternalUrl.shared.launchProtonAccount,
         child: Text(
           context.local.learn_more,
           style: ProtonStyles.body2Medium(
             color: ProtonColors.protonBlue,
           ),
         ),
-        onTap: () {
-          /// show recover-encrypted-messages link
-          /// this can be add after we merge other mr
-          ExternalUrl.shared.launchProtonAccount();
-        },
       ),
       const SizedBox(
         height: 30,

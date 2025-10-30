@@ -113,9 +113,7 @@ class AddWalletAccountView extends ViewBase<AddWalletAccountViewModel> {
                 ),
                 const SizedBox(height: 4),
                 Underline(
-                  onTap: () {
-                    ExternalUrl.shared.launchBlogAddressType();
-                  },
+                  onTap: ExternalUrl.shared.launchBlogAddressType,
                   color: ProtonColors.protonBlue,
                   child: Text(
                     S.of(context).learn_more,
@@ -163,9 +161,7 @@ class AddWalletAccountView extends ViewBase<AddWalletAccountViewModel> {
                   ),
                 ),
                 Underline(
-                  onTap: () {
-                    ExternalUrl.shared.launchBlogAccountIndex();
-                  },
+                  onTap: ExternalUrl.shared.launchBlogAccountIndex,
                   color: ProtonColors.protonBlue,
                   child: Text(
                     S.of(context).learn_more,

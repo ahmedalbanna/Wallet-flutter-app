@@ -59,9 +59,7 @@ class BackupIntroduceView extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     Underline(
-                      onTap: () {
-                        ExternalUrl.shared.launchBlogSeedPhrase();
-                      },
+                      onTap: ExternalUrl.shared.launchBlogSeedPhrase,
                       color: ProtonColors.protonBlue,
                       child: Text(
                         S.of(context).learn_more,
